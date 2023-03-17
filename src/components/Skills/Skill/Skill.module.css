@@ -1,6 +1,7 @@
 .skill {
   @apply w-52 h-52 rounded-lg bg-white shadow-xl;
   @apply flex flex-col justify-center;
+  @apply hover:scale-110;
 }
 
 .skill__img {
