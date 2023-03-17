@@ -1,0 +1,12 @@
+.skill {
+  @apply w-52 h-52 rounded-lg bg-white shadow-xl;
+  @apply flex flex-col justify-center;
+}
+
+.skill__img {
+  @apply self-center;
+}
+
+.skill__name {
+  @apply self-center text-black text-3xl font-medium;
+}

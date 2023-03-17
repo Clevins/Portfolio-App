@@ -1,0 +1,7 @@
+.link {
+  @apply flex flex-row;
+}
+
+.link__icon {
+  @apply h-6 w-6 mr-2;
+}

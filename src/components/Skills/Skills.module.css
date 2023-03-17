@@ -1,0 +1,15 @@
+.skills {
+  @apply bg-gradient-primary;
+  /* background: hsla(342, 97%, 65%, 1);
+  background: linear-gradient(
+    135deg,
+    hsla(342, 97%, 65%, 1) 50%,
+    hsla(321, 81%, 54%, 1) 100%
+  ); */
+}
+.skills__header {
+  @apply text-6xl text-center text-white p-16;
+}
+.skills__list {
+  @apply w-5/6 max-w-[1600px]  mx-auto pb-10;
+}

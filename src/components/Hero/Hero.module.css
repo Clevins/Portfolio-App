@@ -1,0 +1,7 @@
+.hero {
+  @apply relative w-full h-screen bg-mask overflow-hidden;
+  @apply flex justify-center items-center;
+}
+.hero__image {
+  @apply bg-hero bg-no-repeat bg-cover bg-center bg-fixed z-0 w-full h-full absolute opacity-20;
+}

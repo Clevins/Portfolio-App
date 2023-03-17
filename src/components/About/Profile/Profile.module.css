@@ -1,0 +1,15 @@
+.profile {
+  @apply pt-10 lg:pr-20 lg:w-1/2 w-full;
+}
+
+.header {
+  @apply font-semibold text-black text-4xl lg:text-5xl;
+}
+
+.header__underline {
+  @apply h-1 lg:h-1.5 w-40 rounded-sm bg-primary ml-1 mt-2;
+}
+
+.profile__body {
+  @apply mt-5 space-y-4;
+}

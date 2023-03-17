@@ -1,0 +1,4 @@
+.aboutMe {
+  @apply flex flex-col flex-wrap w-5/6 mx-auto my-16 justify-center max-w-[1600px];
+  @apply lg:flex-row;
+}

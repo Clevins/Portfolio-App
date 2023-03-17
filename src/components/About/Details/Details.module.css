@@ -1,0 +1,48 @@
+.details {
+  @apply pt-10 lg:pl-20 lg:w-1/2 w-full;
+}
+
+.header {
+  @apply w-full flex flex-row justify-center flex-wrap;
+}
+
+.header__img {
+  @apply w-56 h-52 overflow-hidden rounded-3xl shadow-2xl;
+}
+
+.yoe {
+  @apply flex flex-col space-y-4 self-center pt-10;
+}
+
+.yoe__num {
+  @apply h-32 w-32 rounded-full bg-primary self-center;
+}
+
+.yoe__num p {
+  @apply font-semibold text-white  text-9xl text-center align-middle pr-2;
+}
+
+.yoe__ex {
+  @apply text-black font-medium text-2xl;
+}
+
+.yoe__ex span {
+  @apply text-black font-semibold text-3xl;
+}
+
+.info {
+  @apply flex flex-row justify-between list-none flex-wrap;
+  /* @apply inline-grid grid-cols-2 list-none justify-between gap-x-32; */
+  @apply text-base font-semibold;
+}
+
+.info span:first-child {
+  @apply mr-2 text-lightPrimary;
+  display: inline-block;
+
+  min-width: 103px;
+}
+
+.info span {
+  @apply text-base text-black;
+}
