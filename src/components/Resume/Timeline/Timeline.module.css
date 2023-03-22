@@ -2,18 +2,6 @@
   @apply mt-20;
 }
 
-.line {
-  width: 2px;
-  height: 200px;
-  background: blue;
-  @apply rounded flex flex-col;
-}
-
-.circle {
-  width: 40px;
-  height: 40px;
-  margin-left: -18px;
-  background: red;
-  border-radius: 50%;
-  @apply my-auto self-center;
+.entries {
+  @apply flex flex-col justify-start;
 }

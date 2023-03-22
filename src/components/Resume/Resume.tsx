@@ -9,8 +9,11 @@ const Resume: FC = () => {
         <h2>Resume</h2>
         <div className={styles.header__underline}></div>
       </div>
+      <div className={styles.timelines}>
+        <Timeline />
 
-      <Timeline />
+        <Timeline />
+      </div>
     </div>
   );
 };

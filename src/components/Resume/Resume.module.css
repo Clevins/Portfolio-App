@@ -3,9 +3,13 @@
 }
 
 .header {
-  @apply font-semibold text-black text-4xl lg:text-5xl;
+  @apply font-semibold text-black text-4xl lg:text-5xl text-center;
 }
 
 .header__underline {
-  @apply h-1 lg:h-1.5 w-40 rounded-sm bg-primary ml-1 mt-2;
+  @apply h-1 lg:h-1.5 w-52 rounded-sm bg-primary mx-auto mt-2;
+}
+
+.timelines {
+  @apply flex flex-row flex-wrap justify-around;
 }

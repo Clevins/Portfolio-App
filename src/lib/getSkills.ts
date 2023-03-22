@@ -1,5 +1,4 @@
 import Skill from "./Skill";
-import ReactIcon from "@icons/tech/react.svg";
 
 const htmlIconUrl = "./src/assets/icons/tech/html5.svg";
 const cssIconUrl = "./src/assets/icons/tech/css.svg";

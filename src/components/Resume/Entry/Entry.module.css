@@ -1,0 +1,36 @@
+.container {
+  @apply relative h-40 w-auto  flex flex-col justify-center -ml-5;
+}
+
+.line {
+  @apply absolute   w-0.5 h-40 bg-primary;
+}
+/* 
+.entry {
+  width: 200px;
+  height: 40px;
+  @apply rounded flex flex-row;
+} */
+
+.entry {
+  @apply flex flex-row flex-wrap justify-start space-x-5;
+}
+
+.entry__circle {
+  @apply my-auto self-center w-10 h-10 bg-primary rounded-full;
+}
+
+.entry__year {
+}
+
+.details {
+  @apply self-center px-10 py-2 xsm:px-0 xsm:py-0;
+}
+
+.details__heading {
+  @apply text-black leading-5 text-xl font-semibold;
+}
+
+.details__subheading {
+  @apply font-normal  leading-5;
+}
