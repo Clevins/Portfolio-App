@@ -1,0 +1,47 @@
+.contactMe {
+  @apply bg-gradient-primary;
+  /* background: hsla(342, 97%, 65%, 1);
+    background: linear-gradient(
+      135deg,
+      hsla(342, 97%, 65%, 1) 50%,
+      hsla(321, 81%, 54%, 1) 100%
+    ); */
+}
+
+.contactMe__container {
+  @apply space-y-10;
+}
+
+.contact__header {
+  @apply text-6xl text-center text-white pt-16;
+}
+
+.contacts {
+  @apply flex flex-row justify-start sm:justify-center items-center  flex-wrap;
+  @apply w-5/6 mx-auto max-w-[1600px];
+}
+
+.contact {
+  @apply flex flex-row items-center mx-5 mt-5 space-x-2;
+}
+
+.contact svg {
+  @apply h-8 w-8 sm:h-10 sm:w-10;
+}
+
+.contact p {
+  @apply text-lg sm:text-2xl text-white;
+}
+
+.socials {
+  @apply flex flex-row justify-center items-center  flex-wrap space-x-8 mt-10;
+  @apply w-5/6 mx-auto max-w-[1600px];
+}
+
+.socials svg {
+  @apply h-8 w-8 sm:h-10 sm:w-10;
+}
+
+.footer {
+  @apply text-center text-white;
+}
