@@ -2,6 +2,10 @@
   @apply mt-20;
 }
 
+.timeline__title {
+  @apply text-3xl font-semibold text-black;
+}
+
 .entries {
   @apply flex flex-col justify-start;
 }

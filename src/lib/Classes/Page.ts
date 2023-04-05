@@ -1,4 +1,4 @@
-import { PageUrls } from "./customTypes";
+import { PageUrls } from "../customTypes";
 
 export class Page {
   name: string;

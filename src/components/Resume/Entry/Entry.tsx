@@ -1,8 +1,13 @@
 import Button from "@components/Button";
+import CEntry from "@lib/Classes/Entry";
 import { FC, MouseEvent } from "react";
 import styles from "./Entry.module.css";
 
-const Entry: FC = () => {
+type EntryProps = {
+  data: CEntry;
+};
+
+const Entry: FC<EntryProps> = ({ data }) => {
   return (
     <div>
       <div className={styles.line} />
@@ -10,11 +15,11 @@ const Entry: FC = () => {
         <div className={styles.entry}>
           <div className={styles.entry__circle}></div>
           <div className={styles.entry__year}>
-            <Button label={"2011 - 2016"} />
+            <Button label={`${data.startDate} - ${data.endDate} `} />
           </div>
           <div className={styles.details}>
-            <div className={styles.details__heading}>St. Joesph's CBS</div>
-            <div className={styles.details__subheading}>Bsc In Computing</div>
+            <div className={styles.details__heading}>{data.title}</div>
+            <div className={styles.details__subheading}>{data.subTitle}</div>
           </div>
         </div>
       </div>

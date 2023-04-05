@@ -2,7 +2,7 @@ import { FC } from "react";
 import ArrowIcon from "@icons/ArrowIcon.svg";
 import getSkills from "@lib/getSkills";
 import styles from "./Skill.module.css";
-import { default as SkillType } from "@lib/Skill";
+import { default as SkillType } from "@lib/Classes/Skill";
 
 type SkillProps = {
   data: SkillType;

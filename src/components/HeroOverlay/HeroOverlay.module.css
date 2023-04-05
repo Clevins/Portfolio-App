@@ -20,5 +20,5 @@
 }
 
 .heroOverlay__icon {
-  @apply w-14 h-14 lg:w-20 lg:h-20 self-center mt-auto animate-bounce;
+  @apply w-14 h-14 lg:w-20 lg:h-20 self-center mt-10 animate-bounce;
 }

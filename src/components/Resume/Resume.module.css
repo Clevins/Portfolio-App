@@ -13,3 +13,7 @@
 .timelines {
   @apply flex flex-row flex-wrap justify-around;
 }
+
+.cv {
+  @apply w-28 m-auto mt-10;
+}

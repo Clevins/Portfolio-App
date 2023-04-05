@@ -2,15 +2,20 @@ import { FC } from "react";
 import ArrowIcon from "@icons/ArrowIcon.svg";
 import styles from "./Timeline.module.css";
 import Entry from "../Entry";
+import CTimeline from "@lib/Classes/Timeline";
 
-const Timeline: FC = () => {
+type TimelineProps = {
+  data: CTimeline;
+};
+
+const Timeline: FC<TimelineProps> = ({ data }) => {
   return (
     <div className={styles.timeline}>
-      <h2>Education</h2>
+      <h2 className={styles.timeline__title}>{data.title}</h2>
       <div className={styles.entries}>
-        <Entry />
-        <Entry />
-        <Entry />
+        {data.entries.map((entry) => {
+          return <Entry data={entry} />;
+        })}
       </div>
     </div>
   );

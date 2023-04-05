@@ -1,4 +1,4 @@
-import { Page } from "./Page";
+import { Page } from "./Classes/Page";
 import { PageUrls } from "@lib/customTypes";
 
 import HomeIcon from "@icons/HomeIcon.svg";

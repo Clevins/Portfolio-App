@@ -1,4 +1,4 @@
-import Skill from "./Skill";
+import Skill from "./Classes/Skill";
 
 const htmlIconUrl = "./src/assets/icons/tech/html5.svg";
 const cssIconUrl = "./src/assets/icons/tech/css.svg";

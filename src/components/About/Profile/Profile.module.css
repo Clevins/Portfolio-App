@@ -1,5 +1,5 @@
 .profile {
-  @apply pt-10 lg:pr-20 lg:w-1/2 w-full;
+  @apply pt-10 lg:pr-20  w-full;
 }
 
 .header {
