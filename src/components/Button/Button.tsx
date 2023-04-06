@@ -3,9 +3,13 @@ import { ButtonProps } from "@lib/customTypes";
 
 import styles from "./Button.module.css";
 
-const Button: FC<ButtonProps> = ({ label, onClick }) => {
+const Button: FC<ButtonProps> = ({ useLg, label, onClick }) => {
   return (
-    <button className={styles.button} onClick={onClick} disabled>
+    <button
+      className={`${styles.button} ${useLg ? styles["button--lg"] : ""} `}
+      onClick={onClick}
+      disabled
+    >
       <p>{label}</p>
     </button>
   );

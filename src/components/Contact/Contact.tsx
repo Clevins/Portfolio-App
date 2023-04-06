@@ -1,5 +1,8 @@
 import { FC } from "react";
 
+import React from "react";
+import Fade from "react-reveal/Fade";
+
 import PhoneIcon from "@icons/contact/PhoneIcon.svg";
 import HomeIcon from "@icons/contact/HomeIcon.svg";
 import EmailIcon from "@icons/contact/EmailIcon.svg";
@@ -14,33 +17,43 @@ const Contact: FC = () => {
   return (
     <div className={styles.contactMe}>
       <div className={styles.contactMe__container}>
-        <div className={styles.contact__header}>Contact Me</div>
-        <div className={styles.contacts}>
-          <div className={styles.contact}>
-            <PhoneIcon />
-            <p>(+353) 86 209 8913</p>
+        <Fade left>
+          <div className={styles.contact__header}>Contact Me</div>
+        </Fade>
+        <Fade right>
+          <div className={styles.contacts}>
+            <div className={styles.contact}>
+              <PhoneIcon />
+              <p>(+353) 86 209 8913</p>
+            </div>
+            <div className={styles.contact}>
+              <EmailIcon />
+              <p>cormaclevins@outlook.ie</p>
+            </div>
+            <div className={styles.contact}>
+              <HomeIcon />
+              <p>Downtown, Vancouver, BC</p>
+            </div>
           </div>
-          <div className={styles.contact}>
-            <EmailIcon />
-            <p>cormaclevins@outlook.ie</p>
+        </Fade>
+        <Fade left>
+          <div className={styles.socials}>
+            <button>
+              <LinkedInIcon />
+            </button>
+            <button>
+              <FacebookIcon />
+            </button>
+            <button>
+              <GithubIcon />
+            </button>
           </div>
-          <div className={styles.contact}>
-            <HomeIcon />
-            <p>Downtown, Vancouver, BC</p>
+        </Fade>
+        <Fade right>
+          <div className={styles.footer}>
+            Designed and Built by Cormac Levins
           </div>
-        </div>
-        <div className={styles.socials}>
-          <button>
-            <LinkedInIcon />
-          </button>
-          <button>
-            <FacebookIcon />
-          </button>
-          <button>
-            <GithubIcon />
-          </button>
-        </div>
-        <div className={styles.footer}>Designed and Built by Cormac Levins</div>
+        </Fade>
       </div>
     </div>
   );

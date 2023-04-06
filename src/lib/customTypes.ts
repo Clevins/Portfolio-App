@@ -7,5 +7,6 @@ export enum PageUrls {
 
 export type ButtonProps = {
   label: string;
+  useLg?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
