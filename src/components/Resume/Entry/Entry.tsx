@@ -15,7 +15,9 @@ const Entry: FC<EntryProps> = ({ data }) => {
         <div className={styles.entry}>
           <div className={styles.entry__circle}></div>
           <div className={styles.entry__year}>
-            <Button label={`${data.startDate} - ${data.endDate} `} />
+            <Button
+              isDisabled={true}
+            >{`${data.startDate} - ${data.endDate} `}</Button>
           </div>
           <div className={styles.details}>
             <div className={styles.details__heading}>{data.title}</div>

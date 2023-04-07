@@ -15,5 +15,9 @@
 }
 
 .cv {
-  @apply w-48 m-auto mt-10;
+  @apply w-52 m-auto mt-10;
+}
+
+.cv__link {
+  @apply h-auto;
 }

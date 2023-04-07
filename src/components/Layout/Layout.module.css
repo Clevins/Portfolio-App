@@ -1,8 +1,0 @@
-.navbar {
-  @apply fixed left-0 top-0 h-screen w-1/5 bg-white flex;
-}
-
-.pages {
-  @apply self-center px-20;
-  @apply font-Montserrat text-base  tracking-wider font-medium leading-8;
-}

@@ -5,7 +5,7 @@ import Skill from "./Skill";
 import styles from "./Skills.module.css";
 
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 const Skills: FC = () => {
   let delay = 0;

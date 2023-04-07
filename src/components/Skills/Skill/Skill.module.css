@@ -5,7 +5,7 @@
 }
 
 .skill__img {
-  @apply self-center;
+  @apply self-center h-32 w-32;
 }
 
 .skill__name {

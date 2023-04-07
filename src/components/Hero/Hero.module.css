@@ -3,5 +3,5 @@
   @apply flex justify-center items-center;
 }
 .hero__image {
-  @apply bg-hero bg-no-repeat bg-cover bg-center bg-fixed z-0 w-full h-full absolute opacity-20;
+  @apply bg-no-repeat bg-cover bg-center bg-fixed z-0 w-full h-full absolute opacity-20;
 }

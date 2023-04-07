@@ -10,19 +10,23 @@ const Profile: FC = () => {
       </div>
       <div className={styles.profile__body}>
         <p>
-          Hi, my name is Adriano Smith and I began using WordPress when it first
-          began. I’ve spent most of my waking hours for the last ten years
-          designing, programming and operating WordPress sites.
+          Hi, my name is Cormac Levins, I am a web developer and I've recently
+          relocated to Vancouver and am looking for a new opportunity. I started
+          my journey when I enrolled in Bsc. In Computing at Dundalk Institue
+          for Technology. After a few days, I knew this is what I wanted to do
+          as a career and I have been working at it ever since. Over the last
+          three years, I have worked with several companies in Ireland, the
+          Netherlands, and the US. And have worked with team members across the
+          globe in a remote enviroment building multimedia web apps.
         </p>
+
         <p>
-          One of my specialties is taking an idea from scratch and creating a
-          full-fledged platform.
-        </p>
-        <p>
-          I go beyond to produce sites with a unique, outstanding, contemporary
-          look-and-feel. With extensive knowledge of web mechanics, I’m able to
-          optimize complex integrations to require little-to-no maintenance
-          while running on their own for years.
+          I believe every small detail matters. I prioritize the quality of my
+          code over most other things, It's rarely perfect but I am always
+          making a conscious effort to improve it consistently as the project
+          goes on. I feel that writing clean and fully maintainable code is the
+          most important factor in reducing and eliminating technical dept and
+          have made this a primary focus in recent projects.
         </p>
       </div>
     </div>

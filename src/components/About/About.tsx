@@ -2,7 +2,7 @@ import { FC } from "react";
 import ArrowIcon from "@icons/ArrowIcon.svg";
 
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 import stlyes from "./About.module.css";
 import Details from "./Details";

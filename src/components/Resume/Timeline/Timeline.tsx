@@ -5,7 +5,7 @@ import Entry from "../Entry";
 import CTimeline from "@lib/Classes/Timeline";
 
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 type TimelineProps = {
   data: CTimeline;

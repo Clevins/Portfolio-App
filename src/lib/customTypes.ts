@@ -1,3 +1,5 @@
+import { ReactElement, ReactNode } from "react";
+
 export enum PageUrls {
   Home = "/home",
   About = "/about",
@@ -6,7 +8,8 @@ export enum PageUrls {
 }
 
 export type ButtonProps = {
-  label: string;
   useLg?: boolean;
+  isDisabled?: boolean;
+  children: ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };

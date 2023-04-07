@@ -3,9 +3,10 @@ import { getTimelines } from "@lib/getTimlines";
 import { FC } from "react";
 import styles from "./Resume.module.css";
 import Timeline from "./Timeline";
+import DownloadIcon from "@icons/DownloadIcon.svg";
 
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 const Resume: FC = () => {
   const timelines = getTimelines();
@@ -31,10 +32,14 @@ const Resume: FC = () => {
 
       <div className={styles.cv}>
         <Fade right>
-          {/* <Button label={"Download CV"} useLg={true} link/> */}
-          {/* <button href="/test.xlsx">Download</button> */}
-          <a href="/test.xlsx" download>
-            <button> click </button>
+          <a
+            href="./src/assets/CormacLevinsResume.pdf"
+            download
+            className={styles.cv__link}
+          >
+            <Button useLg={true}>
+              Download CV <DownloadIcon />
+            </Button>
           </a>
         </Fade>
       </div>

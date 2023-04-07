@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 import PhoneIcon from "@icons/contact/PhoneIcon.svg";
 import HomeIcon from "@icons/contact/HomeIcon.svg";
