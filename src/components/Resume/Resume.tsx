@@ -8,6 +8,8 @@ import DownloadIcon from "@icons/DownloadIcon.svg";
 import React from "react";
 import { Fade } from "react-reveal";
 
+import ResumePDF from "@assets/CormacLevinsResume.pdf";
+
 const Resume: FC = () => {
   const timelines = getTimelines();
 
@@ -32,11 +34,7 @@ const Resume: FC = () => {
 
       <div className={styles.cv}>
         <Fade right>
-          <a
-            href="./src/assets/CormacLevinsResume.pdf"
-            download
-            className={styles.cv__link}
-          >
+          <a href={ResumePDF} download className={styles.cv__link}>
             <Button useLg={true}>
               Download CV <DownloadIcon />
             </Button>

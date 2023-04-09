@@ -12,7 +12,7 @@ export default defineConfig({
       exportAsDefault: true,
     }),
   ],
-  assetsInclude: ["**/*.jpg"],
+  assetsInclude: ["**/*.jpg", "**/**/*.pdf"],
   resolve: {
     alias: {
       "@lib": path.resolve(__dirname, "./src/lib"),

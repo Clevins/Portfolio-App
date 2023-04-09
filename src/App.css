@@ -6,7 +6,7 @@
 }
 
 body {
-  @apply font-Montserrat text-base  tracking-wider font-medium leading-8 text-lightPrimary;
+  @apply font-Montserrat text-base  tracking-wider font-medium leading-8 text-lightPrimary scroll-smooth;
 }
 
 .card {

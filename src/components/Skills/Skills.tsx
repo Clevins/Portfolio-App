@@ -9,7 +9,7 @@ import { Fade } from "react-reveal";
 
 const Skills: FC = () => {
   let delay = 0;
-  const skillDelay = 150;
+  const skillDelay = 50;
   return (
     <div className={styles.skills}>
       <div className={styles.skills__header}>Skills</div>
