@@ -40,7 +40,7 @@
   @apply mr-2 text-lightPrimary;
   display: inline-block;
 
-  min-width: 103px;
+  min-width: 90px;
 }
 
 .info span {

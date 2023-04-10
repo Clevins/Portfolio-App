@@ -23,7 +23,7 @@ const About: FC = () => {
       {/* <Profile /> */}
       {/* <Fade left> */}
       {/* <div className={"pt-10 lg:pr-20 lg:w-1/2 w-full"}> */}
-      <div className="pt-10 lg:pr-20 lg:w-1/2 w-full">
+      <div className="pt-10 2xl:pr-20 2xl:w-1/2 w-full ">
         <FadeRight>
           <Profile />
         </FadeRight>
@@ -32,7 +32,7 @@ const About: FC = () => {
       {/* </div> */}
       {/* </Fade> */}
 
-      <div className="pt-10 lg:pl-20 lg:w-1/2 w-full">
+      <div className="pt-10 2xl:pl-20 2xl:w-1/2 w-full">
         <FadeLeft>
           <Details />
         </FadeLeft>

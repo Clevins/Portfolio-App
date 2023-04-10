@@ -71,26 +71,30 @@ const Details: FC = () => {
             <span>Vancouver, BC, Canada</span>
           </li> */}
           <li>
-            <span>Email: </span> <span>cormaclevins@outlook.ie</span>
+            <span>Email: </span>
+            <span>cormaclevins@outlook.ie</span>
           </li>
           <li>
             <span>Phone: </span>
-            <span>(+353) 86 209 8913</span>
+            <span>(+1) 236-867-1166</span>
           </li>
         </ul>
 
         <ul>
           <li>
-            <span>Nationality: </span> <span>Irish</span>
+            <span>Nation: </span>
+            <span>Ireland</span>
           </li>
           {/* <li>
             <span>Study: </span> <span>Dundalk IT</span>
           </li> */}
           <li>
-            <span>Degree: </span> <span>BSc In Computing</span>
+            <span>Degree: </span>
+            <span>BSc In Computing</span>
           </li>
           <li>
-            <span>Interest: </span> <span>Reading, Cooking</span>
+            <span>Interest: </span>
+            <span>Reading, Cooking</span>
           </li>
         </ul>
       </div>

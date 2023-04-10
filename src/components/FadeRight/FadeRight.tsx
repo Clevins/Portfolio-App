@@ -16,7 +16,7 @@ const FadeRight: FC<FadeRightProps> = ({ children }) => {
     <motion.div
       initial={{ opacity: 0, x: -200 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ ease: "easeOut", duration: 1.25 }}
+      transition={{ ease: "easeOut", duration: 1 }}
       viewport={{ once: true }}
     >
       {children}
