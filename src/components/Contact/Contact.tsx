@@ -41,17 +41,26 @@ const Contact: FC = () => {
           <a
             href="https://www.linkedin.com/in/cormac-levins-a152a8109/"
             target="_blank"
+            aria-label="Link to My LinkedIn Page"
           >
             {/* <button> */}
             <LinkedInIcon />
             {/* </button> */}
           </a>
 
-          <a href="https://www.instagram.com/cormaclevins98/" target="_blank">
+          <a
+            href="https://www.instagram.com/cormaclevins98/"
+            target="_blank"
+            aria-label="Link to My Instagram Page"
+          >
             <InstagramIcon />
           </a>
 
-          <a href="  https://github.com/Clevins" target="_blank">
+          <a
+            href="https://github.com/Clevins"
+            target="_blank"
+            aria-label="Link to My Github Page"
+          >
             <GithubIcon />
           </a>
         </div>

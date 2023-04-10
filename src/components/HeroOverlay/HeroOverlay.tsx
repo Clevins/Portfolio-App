@@ -23,6 +23,7 @@ const HeroOverlay: FC = () => {
       </div>
 
       <button
+        aria-label="Scroll Down"
         className={stlyes.heroOverlay__icon}
         onClick={() => {
           let aboutMeElement = document.getElementById("about")!;
