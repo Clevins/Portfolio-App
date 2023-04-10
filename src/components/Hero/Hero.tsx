@@ -6,7 +6,6 @@ import HeroImage from "@assets/img/hero1.jpg";
 import styles from "./Hero.module.css";
 
 const Hero: FC = () => {
-  console.log(HeroImage);
   return (
     <>
       <div className={styles.hero}>

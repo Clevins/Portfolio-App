@@ -9,7 +9,6 @@ type SkillProps = {
 };
 
 const Skill: FC<SkillProps> = ({ data }) => {
-  console.log(data);
   const Icon = data.icon;
   return (
     <div className={styles.skill}>

@@ -46,12 +46,11 @@ const Skills: FC = () => {
         //   hidden: { opacity: 0, y: 40 },
         // }}
       >
-        {getSkills.map((skill) => {
+        {getSkills.map((skill, i) => {
           delay += skillDelay;
-          console.log(skillDelay);
           return (
             // <Fade top delay={delay}>
-            <motion.li variants={item}>
+            <motion.li variants={item} key={i}>
               <Skill data={skill} />
             </motion.li>
 

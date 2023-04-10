@@ -17,8 +17,8 @@ const Timeline: FC<TimelineProps> = ({ data }) => {
     <div className={styles.timeline}>
       <h2 className={styles.timeline__title}>{data.title}</h2>
       <div className={styles.entries}>
-        {data.entries.map((entry) => {
-          return <Entry data={entry} />;
+        {data.entries.map((entry, i) => {
+          return <Entry data={entry} key={i} />;
         })}
       </div>
     </div>

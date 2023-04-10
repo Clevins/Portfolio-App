@@ -15,8 +15,6 @@ import FadeLeft from "@components/FadeLeft/FadeLeft";
 const Resume: FC = () => {
   const timelines = getTimelines();
 
-  console.log(timelines);
-
   return (
     <div className={styles.resume}>
       <div className={styles.header}>
@@ -31,10 +29,10 @@ const Resume: FC = () => {
         {/* </Fade> */}
       </div>
       <div className={styles.timelines}>
-        {timelines.map((timeline) => {
+        {timelines.map((timeline, i) => {
           return (
             // <Fade right ssrFadeout>
-            <FadeRight>
+            <FadeRight key={i}>
               <Timeline data={timeline} />
             </FadeRight>
 

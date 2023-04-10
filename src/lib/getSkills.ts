@@ -38,6 +38,4 @@ const getSkills = [
   new Skill("Node", "Node", NodeIcon),
 ];
 
-console.log(getSkills);
-
 export default getSkills;

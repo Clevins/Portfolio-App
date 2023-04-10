@@ -9,7 +9,6 @@ const Button: FC<ButtonProps> = ({
   children,
   useLg,
 }) => {
-  console.log(isDisabled);
   return (
     <button
       className={`${styles.button} ${useLg ? styles["button--lg"] : ""} `}
