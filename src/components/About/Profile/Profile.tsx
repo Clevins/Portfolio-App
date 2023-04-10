@@ -1,8 +1,10 @@
+import FadeRight from "@components/FadeRight/FadeRight";
 import React, { FC } from "react";
 import styles from "./Profile.module.css";
 
 const Profile: FC = () => {
   return (
+    // <FadeRight>
     <div className={styles.profile}>
       <div className={styles.header}>
         <h2>Who Am I?</h2>

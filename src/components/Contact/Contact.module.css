@@ -13,7 +13,7 @@
 }
 
 .contact__header {
-  @apply text-6xl text-center text-white pt-16;
+  @apply text-5xl text-center text-white pt-16 md:text-6xl;
 }
 
 .contacts {
@@ -39,9 +39,13 @@
 }
 
 .socials svg {
-  @apply h-8 w-8 sm:h-10 sm:w-10;
+  @apply h-8 w-8;
 }
 
 .footer {
   @apply text-center text-white;
+}
+
+.footer span {
+  @apply text-center text-white font-bold;
 }

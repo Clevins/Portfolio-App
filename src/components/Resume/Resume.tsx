@@ -6,9 +6,11 @@ import Timeline from "./Timeline";
 import DownloadIcon from "@icons/DownloadIcon.svg";
 
 import React from "react";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 
 import ResumePDF from "@assets/CormacLevinsResume.pdf";
+import FadeRight from "@components/FadeRight/FadeRight";
+import FadeLeft from "@components/FadeLeft/FadeLeft";
 
 const Resume: FC = () => {
   const timelines = getTimelines();
@@ -18,28 +20,37 @@ const Resume: FC = () => {
   return (
     <div className={styles.resume}>
       <div className={styles.header}>
-        <Fade left>
+        <FadeRight>
           <h2>Resume</h2>
-        </Fade>
+        </FadeRight>
 
-        <Fade right>
+        {/* <Fade right ssrFadeout> */}
+        <FadeLeft>
           <div className={styles.header__underline}></div>
-        </Fade>
+        </FadeLeft>
+        {/* </Fade> */}
       </div>
       <div className={styles.timelines}>
         {timelines.map((timeline) => {
-          return <Timeline data={timeline} />;
+          return (
+            // <Fade right ssrFadeout>
+            <FadeRight>
+              <Timeline data={timeline} />
+            </FadeRight>
+
+            // </Fade>
+          );
         })}
       </div>
 
       <div className={styles.cv}>
-        <Fade right>
-          <a href={ResumePDF} download className={styles.cv__link}>
-            <Button useLg={true}>
-              Download CV <DownloadIcon />
-            </Button>
-          </a>
-        </Fade>
+        {/* <Fade right ssrFadeout> */}
+        <a href={ResumePDF} download className={styles.cv__link}>
+          <Button useLg={true}>
+            Download CV <DownloadIcon />
+          </Button>
+        </a>
+        {/* </Fade> */}
       </div>
     </div>
   );

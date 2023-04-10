@@ -5,7 +5,7 @@ import Entry from "../Entry";
 import CTimeline from "@lib/Classes/Timeline";
 
 import React from "react";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 
 type TimelineProps = {
   data: CTimeline;
@@ -13,16 +13,16 @@ type TimelineProps = {
 
 const Timeline: FC<TimelineProps> = ({ data }) => {
   return (
-    <Fade bottom>
-      <div className={styles.timeline}>
-        <h2 className={styles.timeline__title}>{data.title}</h2>
-        <div className={styles.entries}>
-          {data.entries.map((entry) => {
-            return <Entry data={entry} />;
-          })}
-        </div>
+    // <Fade right ssrFadeout>
+    <div className={styles.timeline}>
+      <h2 className={styles.timeline__title}>{data.title}</h2>
+      <div className={styles.entries}>
+        {data.entries.map((entry) => {
+          return <Entry data={entry} />;
+        })}
       </div>
-    </Fade>
+    </div>
+    // </Fade>
   );
 };
 
