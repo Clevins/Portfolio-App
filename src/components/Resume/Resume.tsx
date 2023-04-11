@@ -1,16 +1,14 @@
-import Button from "@components/Button";
-import { getTimelines } from "@lib/getTimlines";
 import { FC } from "react";
-import styles from "./Resume.module.css";
+import { getTimelines } from "@lib/getTimlines";
+import { FadeDirection } from "@lib/customTypes";
+
+import Fade from "@components/Fade";
+import Button from "@components/Button";
 import Timeline from "./Timeline";
+
 import DownloadIcon from "@icons/DownloadIcon.svg";
-
-import React from "react";
-// import { Fade } from "react-reveal";
-
 import ResumePDF from "@assets/CormacLevinsResume.pdf";
-import FadeRight from "@components/FadeRight/FadeRight";
-import FadeLeft from "@components/FadeLeft/FadeLeft";
+import styles from "./Resume.module.css";
 
 const Resume: FC = () => {
   const timelines = getTimelines();
@@ -18,37 +16,32 @@ const Resume: FC = () => {
   return (
     <div className={styles.resume}>
       <div className={styles.header}>
-        <FadeRight>
+        <Fade direction={FadeDirection.LEFT}>
           <h2>Resume</h2>
-        </FadeRight>
+        </Fade>
 
-        {/* <Fade right ssrFadeout> */}
-        <FadeLeft>
+        <Fade direction={FadeDirection.RIGHT}>
           <div className={styles.header__underline}></div>
-        </FadeLeft>
-        {/* </Fade> */}
+        </Fade>
       </div>
       <div className={styles.timelines}>
         {timelines.map((timeline, i) => {
           return (
-            // <Fade right ssrFadeout>
-            <FadeRight key={i}>
+            <Fade direction={FadeDirection.LEFT} key={i}>
               <Timeline data={timeline} />
-            </FadeRight>
-
-            // </Fade>
+            </Fade>
           );
         })}
       </div>
 
       <div className={styles.cv}>
-        {/* <Fade right ssrFadeout> */}
-        <a href={ResumePDF} download className={styles.cv__link}>
-          <Button useLg={true}>
-            Download CV <DownloadIcon />
-          </Button>
-        </a>
-        {/* </Fade> */}
+        <Fade direction={FadeDirection.DOWN}>
+          <a href={ResumePDF} download className={styles.cv__link}>
+            <Button useLg={true}>
+              Download CV <DownloadIcon />
+            </Button>
+          </a>
+        </Fade>
       </div>
     </div>
   );

@@ -1,19 +1,11 @@
 import { FC } from "react";
-import ArrowIcon from "@icons/ArrowIcon.svg";
-import styles from "./Timeline.module.css";
 import Entry from "../Entry";
-import CTimeline from "@lib/Classes/Timeline";
+import { TimelineProps } from "@lib/customTypes";
 
-import React from "react";
-// import { Fade } from "react-reveal";
-
-type TimelineProps = {
-  data: CTimeline;
-};
+import styles from "./Timeline.module.css";
 
 const Timeline: FC<TimelineProps> = ({ data }) => {
   return (
-    // <Fade right ssrFadeout>
     <div className={styles.timeline}>
       <h2 className={styles.timeline__title}>{data.title}</h2>
       <div className={styles.entries}>
@@ -22,7 +14,6 @@ const Timeline: FC<TimelineProps> = ({ data }) => {
         })}
       </div>
     </div>
-    // </Fade>
   );
 };
 

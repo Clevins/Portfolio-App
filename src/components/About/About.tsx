@@ -1,55 +1,26 @@
 import { FC } from "react";
-import ArrowIcon from "@icons/ArrowIcon.svg";
 
-import React from "react";
-// import { Fade } from "react-reveal";
-import { motion } from "framer-motion";
-
-import stlyes from "./About.module.css";
 import Details from "./Details";
 import Profile from "./Profile";
-import FadeRight from "@components/FadeRight/FadeRight";
-import FadeLeft from "@components/FadeLeft/FadeLeft";
+
+import stlyes from "./About.module.css";
+import Fade from "@components/Fade";
+import { FadeDirection } from "@lib/customTypes";
 
 const About: FC = () => {
   return (
     <div className={stlyes.aboutMe} id={"about"}>
-      {/* <Fade left>
-        <Profile />
-      </Fade>
-      <Fade right>
-       
-      </Fade> */}
-      {/* <Profile /> */}
-      {/* <Fade left> */}
-      {/* <div className={"pt-10 lg:pr-20 lg:w-1/2 w-full"}> */}
-      <div className="pt-10 2xl:pr-20 2xl:w-1/2 w-full ">
-        <FadeRight>
+      <div className={stlyes.about__profile}>
+        <Fade direction={FadeDirection.RIGHT}>
           <Profile />
-        </FadeRight>
+        </Fade>
       </div>
 
-      {/* </div> */}
-      {/* </Fade> */}
-
-      <div className="pt-10 2xl:pl-20 2xl:w-1/2 w-full">
-        <FadeLeft>
+      <div className={stlyes.about__profile}>
+        <Fade direction={FadeDirection.LEFT}>
           <Details />
-        </FadeLeft>
+        </Fade>
       </div>
-
-      {/* <Fade right>
-        <div className={"pt-10 lg:pr-20 lg:w-1/2 w-full"}>
-          <Details />
-        </div>
-      </Fade> */}
-
-      {/* <Zoom>
-  <div className="some-class">
-    <CustomComponent />   
-  </div>
-</Zoom> */}
-      {/* <Details /> */}
     </div>
   );
 };

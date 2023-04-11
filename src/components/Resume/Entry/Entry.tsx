@@ -1,11 +1,8 @@
+import { FC } from "react";
+import { EntryProps } from "@lib/customTypes";
 import Button from "@components/Button";
-import CEntry from "@lib/Classes/Entry";
-import { FC, MouseEvent } from "react";
-import styles from "./Entry.module.css";
 
-type EntryProps = {
-  data: CEntry;
-};
+import styles from "./Entry.module.css";
 
 const Entry: FC<EntryProps> = ({ data }) => {
   return (

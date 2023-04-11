@@ -1,20 +1,19 @@
-import FadeRight from "@components/FadeRight/FadeRight";
-import React, { FC } from "react";
+import { FC } from "react";
+
 import styles from "./Profile.module.css";
 
 const Profile: FC = () => {
   return (
-    // <FadeRight>
-    <div className={styles.profile}>
+    <>
       <div className={styles.header}>
         <h2>Who Am I?</h2>
         <div className={styles.header__underline}></div>
       </div>
-      <div className={styles.profile__body}>
+      <div className={styles.profile}>
         <p>
           Hi, my name is Cormac Levins, I am a web developer and I've recently
           relocated to Vancouver and am looking for a new opportunity. I started
-          my journey when I enrolled in Bsc. In Computing at Dundalk Institue
+          my journey when I enrolled in Bsc. In Computing at Dundalk Institute
           for Technology. After a few days, I knew this is what I wanted to do
           as a career and I have been working at it ever since. Over the last
           three years, I have worked with several companies in Ireland, the
@@ -31,7 +30,7 @@ const Profile: FC = () => {
           have made this a primary focus in recent projects.
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

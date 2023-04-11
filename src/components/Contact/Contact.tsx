@@ -1,8 +1,5 @@
 import { FC } from "react";
 
-import React from "react";
-// import { Fade } from "react-reveal";
-
 import PhoneIcon from "@icons/contact/PhoneIcon.svg";
 import HomeIcon from "@icons/contact/HomeIcon.svg";
 import EmailIcon from "@icons/contact/EmailIcon.svg";
@@ -17,10 +14,8 @@ const Contact: FC = () => {
   return (
     <div className={styles.contactMe}>
       <div className={styles.contactMe__container}>
-        {/* <Fade left ssrFadeout> */}
         <div className={styles.contact__header}>Contact Me</div>
-        {/* </Fade> */}
-        {/* <Fade right ssrFadeout> */}
+
         <div className={styles.contacts}>
           <div className={styles.contact}>
             <PhoneIcon />
@@ -35,17 +30,14 @@ const Contact: FC = () => {
             <p>Vancouver, BC</p>
           </div>
         </div>
-        {/* </Fade> */}
-        {/* <Fade left ssrFadeout> */}
+
         <div className={styles.socials}>
           <a
             href="https://www.linkedin.com/in/cormac-levins-a152a8109/"
             target="_blank"
             aria-label="Link to My LinkedIn Page"
           >
-            {/* <button> */}
             <LinkedInIcon />
-            {/* </button> */}
           </a>
 
           <a
@@ -64,8 +56,7 @@ const Contact: FC = () => {
             <GithubIcon />
           </a>
         </div>
-        {/* </Fade> */}
-        {/* <Fade right ssrFadeout> */}
+
         <div className={styles.footer}>
           Designed and Built by{" "}
           <a
@@ -75,7 +66,6 @@ const Contact: FC = () => {
             <span>Cormac Levins</span>
           </a>
         </div>
-        {/* </Fade> */}
       </div>
     </div>
   );

@@ -1,48 +1,36 @@
-.details {
-  /* @apply pt-10 lg:pl-20 lg:w-1/2 w-full; */
-}
-
-.header {
-  @apply w-full flex flex-row justify-center flex-wrap;
-}
-
-.header__img {
-  @apply w-56 h-52 overflow-hidden rounded-3xl shadow-2xl;
-}
-
-.yoe {
+.experience {
   @apply flex flex-col space-y-4 self-center pt-10;
 }
 
-.yoe__num {
+.experience__years {
   @apply h-32 w-32 rounded-full bg-primary self-center;
 }
 
-.yoe__num p {
+.experience__years p {
   @apply font-semibold text-white  text-9xl text-center align-middle pr-2;
 }
 
-.yoe__ex {
-  @apply text-black font-medium text-2xl;
+.experience__label {
+  @apply text-black font-medium text-2xl w-auto mx-auto;
 }
 
-.yoe__ex span {
+.experience__label span {
   @apply text-black font-semibold text-3xl;
 }
 
-.info {
+.divider {
+  @apply my-10;
+}
+
+.details {
   @apply flex flex-row justify-between list-none flex-wrap;
-  /* @apply inline-grid grid-cols-2 list-none justify-between gap-x-32; */
   @apply text-base font-semibold;
 }
 
-.info span:first-child {
-  @apply mr-2 text-lightPrimary;
-  display: inline-block;
-
-  min-width: 90px;
+.details span:first-child {
+  @apply mr-2 text-lightPrimary inline-block min-w-[90px];
 }
 
-.info span {
+.details span {
   @apply text-base text-black;
 }

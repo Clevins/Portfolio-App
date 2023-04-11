@@ -2,3 +2,11 @@
   @apply flex flex-col flex-wrap w-5/6 mx-auto my-16 justify-center max-w-[1600px];
   @apply 2xl:flex-row;
 }
+
+.about__profile {
+  @apply pt-10 2xl:pr-20 2xl:w-1/2 w-full;
+}
+
+.about__details {
+  @apply pt-10 2xl:pl-20 2xl:w-1/2 w-full;
+}
