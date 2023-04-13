@@ -7,7 +7,7 @@ import stlyes from "./HeroOverlay.module.css";
 
 const HeroOverlay: FC = () => {
   const typeWriterOptions = {
-    strings: ["Web Developer", "QA", "Front-End"],
+    strings: ["Web Developer", "JavaScript Dev", "Front-End"],
     autoStart: true,
     loop: true,
   };
