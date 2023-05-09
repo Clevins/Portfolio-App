@@ -21,7 +21,7 @@ const Fade: FC<FadeProps> = ({ children, direction }) => {
     <motion.div
       initial={{ opacity: 0, x: initialX, y: initialY }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      transition={{ ease: "easeOut", duration: 1 }}
+      transition={{ ease: "easeOut", duration: 1, delay: 0.2 }}
       viewport={{ once: true }}
     >
       {children}
