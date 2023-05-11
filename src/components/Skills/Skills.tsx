@@ -22,7 +22,7 @@ const Skills: FC = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 0.5, staggerChildren: 0.2 }}
+        transition={{ delayChildren: 0.5, staggerChildren: 0.2 }}
       >
         {getSkills.map((skill, i) => {
           return (
