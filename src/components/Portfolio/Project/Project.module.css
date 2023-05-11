@@ -1,0 +1,23 @@
+.project {
+  @apply flex items-center justify-center w-96 h-96 rounded-xl shadow-2xl;
+}
+
+.project__link {
+  @apply relative bg-gray-900  w-full h-full rounded-xl;
+}
+
+.project__bg {
+  @apply relative p-5 z-0 w-full h-full rounded-xl group-hover:bg-black group-hover:bg-opacity-80 transition-all transform  duration-500 ease-in-out;
+}
+
+.project__overlay {
+  @apply mt-56 transition-all transform  translate-y-8 invisible  duration-200 ease-in z-50;
+}
+
+.project__name {
+  @apply m-auto text-center z-50 font-light text-white text-3xl;
+}
+
+.project__img {
+  @apply absolute  w-full h-full rounded-xl;
+}
