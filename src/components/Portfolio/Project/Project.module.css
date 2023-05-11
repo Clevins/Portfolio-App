@@ -1,5 +1,5 @@
 .project {
-  @apply flex items-center justify-center w-96 h-96 rounded-xl shadow-2xl;
+  @apply flex items-center justify-center w-72 h-72 lg:w-96 lg:h-96 rounded-xl shadow-2xl self-center my-10;
 }
 
 .project__link {
@@ -11,7 +11,7 @@
 }
 
 .project__overlay {
-  @apply mt-56 transition-all transform  translate-y-8 invisible  duration-200 ease-in z-50;
+  @apply mt-20 lg:mt-56 transition-all transform  translate-y-8 invisible  duration-200 ease-in z-50;
 }
 
 .project__name {

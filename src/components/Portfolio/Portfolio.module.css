@@ -3,5 +3,5 @@
 }
 
 .portfolio__projects {
-  @apply flex lg:flex-row flex-col space-x-10 my-10 justify-center max-w-[1600px] mx-auto;
+  @apply flex lg:flex-row flex-col  flex-wrap lg:space-x-10 my-10 justify-center max-w-[1600px] mx-auto;
 }
