@@ -24,7 +24,7 @@ const HeroOverlay: FC = () => {
         <h2 className={stlyes.overlay__job}>
           <Typewriter options={typeWriterOptions} />
         </h2>
-        <h3 className={stlyes.overlay__location}>Vancouver, BC, Canada</h3>
+        <h3 className={stlyes.overlay__location}>Dublin, Ireland</h3>
       </div>
 
       <button
