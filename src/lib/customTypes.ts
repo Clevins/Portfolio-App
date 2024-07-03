@@ -30,7 +30,7 @@ export type TimelineProps = {
 };
 
 export type EntryProps = {
-  data: CEntry;
+  data: CEntry | null;
 };
 
 export type FadeProps = {

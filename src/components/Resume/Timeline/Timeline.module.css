@@ -1,11 +1,54 @@
 .timeline {
   @apply mt-20;
+  @apply flex flex-row justify-center;
 }
+
+/* .timeline {
+  @apply mt-20 h-96;
+  @apply grid grid-cols-2 gap-0;
+} */
 
 .timeline__title {
   @apply text-3xl font-semibold text-black;
 }
 
+.timeline_line {
+  @apply absolute w-0.5 h-72 bg-primary overflow-y-hidden;
+}
+/* 
 .entries {
   @apply flex flex-col justify-start;
+} */
+
+.entries {
+  @apply grid grid-cols-2 gap-0;
+}
+
+/* Entry remove when finished */
+
+.container {
+  @apply relative h-40 w-auto  flex flex-row justify-center -ml-5 items-end;
+}
+
+.entry {
+  @apply flex flex-col flex-wrap justify-start space-x-5;
+}
+.line {
+  @apply absolute   w-0.5 h-40 bg-primary;
+}
+
+.container__circle {
+  @apply my-auto self-center w-10 h-10 bg-primary rounded-full;
+}
+
+.details {
+  @apply self-center px-10 py-2 xsm:px-0 xsm:py-0;
+}
+
+.details__heading {
+  @apply text-black leading-5 text-xl font-semibold;
+}
+
+.details__subheading {
+  @apply font-normal  leading-5;
 }
