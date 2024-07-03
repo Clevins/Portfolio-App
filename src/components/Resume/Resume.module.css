@@ -11,7 +11,7 @@
 }
 
 .timelines {
-  @apply flex flex-row flex-wrap justify-around;
+  /* @apply flex flex-col justify-center; */
 }
 
 .cv {
@@ -20,4 +20,9 @@
 
 .cv__link {
   @apply h-auto;
+}
+
+.timeline_line {
+  @apply w-0.5 h-72 bg-primary overflow-y-hidden;
+  /* @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2; */
 }

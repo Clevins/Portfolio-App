@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { getTimelines } from "@lib/getTimlines";
+import { getTimeline } from "@lib/getTimline";
 import { FadeDirection } from "@lib/customTypes";
 
 import Fade from "@components/Fade";
@@ -11,7 +11,7 @@ import ResumePDF from "@assets/CormacLevinsResume.pdf";
 import styles from "./Resume.module.css";
 
 const Resume: FC = () => {
-  const timelines = getTimelines();
+  const timeline = getTimeline();
 
   return (
     <div className={styles.resume}>
@@ -24,15 +24,12 @@ const Resume: FC = () => {
           <div className={styles.header__underline}></div>
         </Fade>
       </div>
-      <div className={styles.timelines}>
-        {timelines.map((timeline, i) => {
-          return (
-            <Fade direction={FadeDirection.LEFT} key={i}>
-              <Timeline data={timeline} />
-            </Fade>
-          );
-        })}
-      </div>
+      {/* <div className={styles.timelines}> */}
+      <Fade direction={FadeDirection.LEFT}>
+        {/* <div className={styles.timeline_line} /> */}
+        <Timeline data={timeline} />
+      </Fade>
+      {/* </div> */}
 
       <div className={styles.cv}>
         <Fade direction={FadeDirection.DOWN}>
