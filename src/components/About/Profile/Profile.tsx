@@ -14,10 +14,10 @@ const Profile: FC = () => {
           Hi, my name is Cormac Levins. I am a web developer based in Dublin,
           Ireland and I am actively seeking new opportunities. My journey began
           when I enrolled in the BSc in Computing program at Dundalk Institute
-          of Technology in Ireland. Within a few days, I knew this was the
-          career I wanted to pursue. Four years later, I graduated with a First
-          Class Honours degree and have been dedicated to building my career and
-          enhancing my skills ever since.
+          of Technology. Within a few days, I knew this was the career I wanted
+          to pursue. Four years later, I graduated with a First Class Honours
+          degree and have been dedicated to building my career and enhancing my
+          skills ever since.
         </p>
 
         <p>
