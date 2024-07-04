@@ -29,7 +29,15 @@
 /* New Entry file */
 
 .container {
-  @apply relative h-40  flex flex-row;
+  @apply relative   flex items-end h-auto;
+}
+
+.container--left {
+  @apply flex-row-reverse border-r-2 border-[#fc5185];
+}
+
+.container--right {
+  @apply flex-row border-l-2 border-[#fc5185];
 }
 
 .entry {
@@ -40,9 +48,16 @@
 }
 
 .container__circle {
-  @apply my-auto self-center w-10 h-10 bg-primary rounded-full;
+  @apply my-auto self-center w-10 h-10 bg-primary rounded-full -ml-[22px];
 }
 
+.container__circle--left {
+  @apply -mr-[22px];
+}
+
+.container__circle--right {
+  @apply -mr-[22px];
+}
 .details {
   @apply self-center;
 }
@@ -53,4 +68,8 @@
 
 .details__subheading {
   @apply font-normal  leading-5;
+}
+
+.details__desription {
+  @apply font-light leading-5 text-black mt-2 w-96;
 }

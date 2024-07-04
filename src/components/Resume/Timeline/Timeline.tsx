@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Entry from "../Entry";
-import { TimelineProps } from "@lib/customTypes";
+import { Position, TimelineProps } from "@lib/customTypes";
 
 import styles from "./Timeline.module.css";
 import Button from "@components/Button";
@@ -12,7 +12,13 @@ const Timeline: FC<TimelineProps> = ({ data }) => {
         {data.entries.map((entry, i) => {
           console.log(data);
 
-          return <Entry data={entry} key={i} />;
+          return (
+            <Entry
+              data={entry}
+              key={i}
+              position={i % 2 === 0 ? Position.LEFT : Position.RIGHT}
+            />
+          );
         })}
       </div>
 

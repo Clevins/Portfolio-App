@@ -29,8 +29,14 @@ export type TimelineProps = {
   data: CTimeline;
 };
 
+export enum Position {
+  LEFT,
+  RIGHT,
+}
+
 export type EntryProps = {
   data: CEntry | null;
+  position: Position;
 };
 
 export type FadeProps = {

@@ -9,6 +9,7 @@ export default class CTimeline {
 
   // For Timeline grid Layout need an array with the following Pattern
   // Entries = [null, CEntry, CEntry, null, null, CEntry, CEntry, null, null ... CEntry]
+  //           [  0      1       2     3     4      5       6      7     8        n]
   transformArray(entries: (CEntry | null)[]) {
     // Initialize the new array with an empty array
     let modifiable = [];
