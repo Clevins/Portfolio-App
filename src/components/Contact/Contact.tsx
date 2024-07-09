@@ -22,7 +22,7 @@ const Contact: FC = () => {
           <div className={styles.contacts}>
             <div className={styles.contact}>
               <PhoneIcon />
-              <p>(+1) 236-867-1166</p>
+              <p>086 209 8913</p>
             </div>
             <div className={styles.contact}>
               <EmailIcon />
@@ -30,7 +30,7 @@ const Contact: FC = () => {
             </div>
             <div className={styles.contact}>
               <HomeIcon />
-              <p>Vancouver, BC</p>
+              <p>Dublin, Ireland</p>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ const Contact: FC = () => {
           <div className={styles.footer}>
             Designed and Built by{" "}
             <a
-              href="https://www.linkedin.com/in/cormac-levins-a152a8109/"
+              href="https://www.linkedin.com/in/cormac-levins/"
               target="_blank"
             >
               <span>Cormac Levins</span>
