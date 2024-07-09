@@ -7,7 +7,7 @@ import Button from "@components/Button";
 import Timeline from "./Timeline";
 
 import DownloadIcon from "@icons/DownloadIcon.svg";
-import ResumePDF from "@assets/CormacLevinsResume.pdf";
+import ResumePDF from "@assets/Cormac_Levins_CV.pdf";
 import styles from "./Resume.module.css";
 
 const Resume: FC = () => {
