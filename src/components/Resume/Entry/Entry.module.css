@@ -43,6 +43,15 @@
 .entry {
   @apply flex flex-col flex-wrap justify-start;
 }
+
+.entry--left {
+  @apply items-end;
+}
+
+.entry--right {
+  @apply items-start;
+}
+
 .line {
   @apply absolute   w-0.5 h-40 bg-primary;
 }

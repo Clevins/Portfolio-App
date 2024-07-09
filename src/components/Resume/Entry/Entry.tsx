@@ -17,6 +17,9 @@ const Entry: FC<EntryProps> = ({ data, position }) => {
       ? styles["container__circle--left"]
       : styles["container--right"];
 
+  let entryAlignment =
+    position === Position.LEFT ? styles["entry--left"] : styles["entry--right"];
+
   return (
     <div className={`${styles.container} ${flexRowDirection}`}>
       {data !== null ? (
@@ -24,7 +27,7 @@ const Entry: FC<EntryProps> = ({ data, position }) => {
       ) : null}
 
       {data !== null ? (
-        <div className={styles.entry}>
+        <div className={`${styles.entry} ${entryAlignment}`}>
           <>
             <div className={styles.entry__year}>
               <Button
