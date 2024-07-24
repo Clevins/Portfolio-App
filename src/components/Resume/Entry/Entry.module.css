@@ -45,11 +45,11 @@
 }
 
 .entry--left {
-  @apply items-end;
+  @apply items-end mr-10;
 }
 
 .entry--right {
-  @apply items-start;
+  @apply items-start ml-4;
 }
 
 .line {
@@ -57,7 +57,7 @@
 }
 
 .container__circle {
-  @apply my-auto self-center w-10 h-10 bg-primary rounded-full -ml-[22px];
+  @apply mb-auto self-center w-10 h-10 bg-primary rounded-full -ml-[22px];
 }
 
 .container__circle--left {
@@ -68,7 +68,7 @@
   @apply -mr-[22px];
 }
 .details {
-  @apply self-center;
+  @apply self-center mt-2 ml-2;
 }
 
 .details__heading {
