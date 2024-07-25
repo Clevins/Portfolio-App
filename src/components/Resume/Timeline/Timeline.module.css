@@ -1,6 +1,6 @@
 .timeline {
   @apply mt-20;
-  @apply flex flex-row justify-center;
+  @apply flex flex-row  justify-center;
 }
 
 /* .timeline {
