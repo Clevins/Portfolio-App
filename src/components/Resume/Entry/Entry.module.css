@@ -29,7 +29,7 @@
 /* New Entry file */
 
 .container {
-  @apply relative   flex items-end h-auto border-[#fc5185] lg:py-2 py-2;
+  @apply relative   flex items-end h-auto border-[#fc5185]  pt-0 lg:pt-4;
 }
 
 .container--left {
