@@ -24,12 +24,9 @@ const Resume: FC = () => {
           <div className={styles.header__underline}></div>
         </Fade>
       </div>
-      {/* <div className={styles.timelines}> */}
       <Fade direction={FadeDirection.LEFT}>
-        {/* <div className={styles.timeline_line} /> */}
         <Timeline data={timeline} />
       </Fade>
-      {/* </div> */}
 
       <div className={styles.cv}>
         <Fade direction={FadeDirection.DOWN}>

@@ -21,8 +21,6 @@ const Portfolio: FC = () => {
     <div className={styles.portfolio}>
       <div className={styles.portfolio__header}>Portfolio</div>
 
-      {/* <div className={styles.portfolio__projects}> */}
-
       <motion.ul
         className={styles.portfolio__projects}
         initial="hidden"
@@ -38,11 +36,6 @@ const Portfolio: FC = () => {
           );
         })}
       </motion.ul>
-
-      {/* {portfolio.map((project) => {
-          return <Project project={project} key={project.name} />;
-        })} */}
-      {/* </div> */}
     </div>
   );
 };

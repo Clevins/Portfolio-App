@@ -5,9 +5,6 @@ import Button from "@components/Button";
 import styles from "./Entry.module.css";
 
 const Entry: FC<EntryProps> = ({ data, position }) => {
-  console.log(position === Position.LEFT);
-  console.log(data);
-
   let flexRowDirection =
     position === Position.LEFT
       ? styles["container--left"]
@@ -52,21 +49,3 @@ const Entry: FC<EntryProps> = ({ data, position }) => {
 };
 
 export default Entry;
-
-{
-  /* <div className={styles.container}>
-        <div className={styles.container__circle}></div>
-        <div className={styles.entry}>
-          <div className={styles.entry__year}>
-            <Button isDisabled={true}>{`2016 - 2020 `}</Button>
-          </div>
-          <div className={styles.details}>
-            <div className={styles.details__heading}>St. Joesphas School</div>
-            <div className={styles.details__subheading}>Secondary School</div>
-            <div className={styles.details__subheading}>
-              Received my leaving Cert Certificate{" "}
-            </div>
-          </div>
-        </div>
-      </div> */
-}

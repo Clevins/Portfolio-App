@@ -10,19 +10,10 @@
   @apply h-1 lg:h-1.5 w-52 rounded-sm bg-primary mx-auto mt-2;
 }
 
-.timelines {
-  /* @apply flex flex-col justify-center; */
-}
-
 .cv {
   @apply w-52 m-auto mt-10;
 }
 
 .cv__link {
   @apply h-auto;
-}
-
-.timeline_line {
-  @apply w-0.5 h-72 bg-primary overflow-y-hidden;
-  /* @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2; */
 }

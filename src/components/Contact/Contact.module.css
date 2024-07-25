@@ -1,7 +1,3 @@
-.contactMe {
-  /* @apply bg-gradient-primary; */
-}
-
 .contactMe__container {
   @apply space-y-10;
 }

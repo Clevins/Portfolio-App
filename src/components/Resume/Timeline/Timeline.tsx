@@ -10,8 +10,6 @@ const Timeline: FC<TimelineProps> = ({ data }) => {
     <div className={styles.timeline}>
       <div className={styles.entries}>
         {data.entries.map((entry, i) => {
-          console.log(data);
-
           return (
             <Entry
               data={entry}
@@ -21,22 +19,6 @@ const Timeline: FC<TimelineProps> = ({ data }) => {
           );
         })}
       </div>
-
-      {/* <div className={styles.container}>
-        <div className={styles.container__circle}></div>
-        <div className={styles.entry}>
-          <div className={styles.entry__year}>
-            <Button isDisabled={true}>{`2016 - 2020 `}</Button>
-          </div>
-          <div className={styles.details}>
-            <div className={styles.details__heading}>St. Joesphas School</div>
-            <div className={styles.details__subheading}>Secondary School</div>
-            <div className={styles.details__subheading}>
-              Received my leaving Cert Certificate{" "}
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
