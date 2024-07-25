@@ -6,6 +6,7 @@ import styles from "./Entry.module.css";
 
 const Entry: FC<EntryProps> = ({ data, position }) => {
   console.log(position === Position.LEFT);
+  console.log(data);
 
   let flexRowDirection =
     position === Position.LEFT

@@ -21,7 +21,7 @@
 } */
 
 .entries {
-  @apply grid grid-cols-2 gap-0;
+  @apply lg:grid lg:grid-cols-2 lg:gap-0 flex flex-col;
 }
 
 /* Entry remove when finished */

@@ -29,23 +29,24 @@
 /* New Entry file */
 
 .container {
-  @apply relative   flex items-end h-auto;
+  @apply relative   flex items-end h-auto border-[#fc5185] lg:py-2 py-2;
 }
 
 .container--left {
-  @apply flex-row-reverse border-r-2 border-[#fc5185];
+  @apply lg:flex-row-reverse lg:border-r-2 lg:border-l-0  flex-row  border-l-2;
 }
 
 .container--right {
-  @apply flex-row border-l-2 border-[#fc5185];
+  @apply flex-row  border-l-2;
 }
+/* @apply lg:flex-row lg:border-l-2 flex-row-reverse border-r-2; */
 
 .entry {
   @apply flex flex-col flex-wrap justify-start;
 }
 
 .entry--left {
-  @apply items-end mr-10;
+  @apply lg:items-end lg:mr-10 items-start ml-4;
 }
 
 .entry--right {
@@ -61,11 +62,11 @@
 }
 
 .container__circle--left {
-  @apply -mr-[22px];
+  @apply lg:-mr-[22px];
 }
 
 .container__circle--right {
-  @apply -mr-[22px];
+  /* @apply -mr-[22px]; */
 }
 .details {
   @apply self-center mt-2 ml-2;
