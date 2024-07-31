@@ -11,11 +11,11 @@ export const getPortfolio = () => {
       "  https://github.com/Clevins/Portfolio-App",
       portfolioImg
     ),
-    new CPortfolio(
-      "Trivia Game",
-      "https://github.com/Clevins/Trivia-App",
-      triviaImg
-    ),
+    // new CPortfolio(
+    //   "Trivia Game",
+    //   "https://github.com/Clevins/Trivia-App",
+    //   triviaImg
+    // ),
     new CPortfolio(
       "Create Component",
       "https://www.npmjs.com/package/create-component-ts",
